@@ -1,0 +1,26 @@
+{
+  "name": "mock1",
+  "version": "1.0.0",
+  "description": "mock app for the hackathon",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k12blaine/Mock1.git"
+  },
+  "author": "Daroush, Brianna, Kiana, Keishon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k12blaine/Mock1/issues"
+  },
+  "homepage": "https://github.com/k12blaine/Mock1#readme"
+}
