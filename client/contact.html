@@ -3,6 +3,7 @@
 		<title>Contact Us</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -11,11 +12,27 @@
 			<div id="header">
 				<h1>Contact Our Team</h1>
 
-				<p>Kiana Blaine</p>
+        <form action="/myaction" method="post">
+          First name:<br>
+          <input type="text" name="firstname"><br>
+          Last name:<br>
+          <input type="text" name="lastname">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          Message:<br>
+          <input type="text" name ="message">
+          <br> <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+
 
 			</div>
       <div id=middle>
-        
+
       </div>
 
 		<!-- Scripts -->
