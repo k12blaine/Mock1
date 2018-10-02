@@ -7,13 +7,20 @@ app.listen(3000,() => {
 });
 
 
+
+app.use(bodyparser.urlencoded({ extended: true }));
+
+
 app.get('/', (req, res) => res.sendFile(__dirname+'/client/index.html'));//connects the backend towards the front end. make sure to plus the folder than contain the index.html
 
-app.get('/contact', (req, res) => {
-  res.sendFile(__dirname+'/client/contact.html');
-  console.log(req.body);
-}
+app.get('/contact', (req, res) => res.sendFile(__dirname+'/client/contact.html')
 );//connects the backend towards the front end. make sure to plus the folder than contain the index.html
+
+// Sets up my action function
+app.post('/myaction', (req, res) => {
+  console.log(req.body);
+  res.sendFile(__dirname + '/client/index.html');
+});
 
 //sets view engine
 app.use(express.static(__dirname+'/client'));
